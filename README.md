@@ -21,3 +21,11 @@ Zu Beginn wurde eine grundlegende Projektstruktur bestehen aus HTML-, CSS- und J
 - Projektstruktur vorhanden
 - Dateien aktuell noch ohne Inhalt
 
+- ## Einrichtung und Versionsverwaltung (11.01.2026)
+
+- Repository zur Versionsverwaltung mit Git initialisiert, dadruch können Änderungen gespeichert, frühere Versionen abgerufen werden
+- Remote-Repository auf GitHub genutzt, wodurch das Projekt gesichert ist und von überall erreichbar wurde
+- Repository lokal geklont, um Konsistenz zwischen lokalem und remote Stand sicherzustellen, dadurch arbeiten sowoh die Online als auch die lokale Version synchron.
+- HTML-Grundstruktur lokal implementiert und getestet: erstes Grundgerüst wurde auf Funktzion getestet.
+
+
