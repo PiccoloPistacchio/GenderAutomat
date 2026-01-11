@@ -28,4 +28,10 @@ Zu Beginn wurde eine grundlegende Projektstruktur bestehen aus HTML-, CSS- und J
 - Repository lokal geklont, um Konsistenz zwischen lokalem und remote Stand sicherzustellen, dadurch arbeiten sowoh die Online als auch die lokale Version synchron.
 - HTML-Grundstruktur lokal implementiert und getestet: erstes Grundgerüst wurde auf Funktzion getestet.
 
+- ## Einbindnung des Frameworks Bootstrap
+
+- Einbindung des Bootstraps durch Verweis im HTML Bereich
+  (<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">)
+  Folge: Für den Kopfbereich der Seite wird kein separates Css mehr benötigt, weil die CSS-Klassen von Bootstrap abgedeckt werden. (Vgl S.66)
+
 
