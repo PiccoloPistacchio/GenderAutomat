@@ -44,6 +44,7 @@ Warum Bootstrap?
 - Sie verfügt über einen Header mit einem globalen Menü (Start, Über mich, Kontakt)
   --> Erinnerung: 
 - Sie verfügt über einen Footer mit Immpressum und Datenschutz, die aber zu nichts führen.
+- Kann auf unterschiedlichen Endgeräten ohne Einbußen gelesen werden.
 
 ## Lokales Menü bauen (12.01.2026)
 
@@ -63,6 +64,29 @@ Ziel war es, längere Inhalte übersichtlicher zu strukturieren und eine direkte
   - auf größeren Bildschirmen wird das Menü neben dem Inhalt dargestellt
 
 Durch diese Umsetzung wurde die Benutzerführung verbessert und die Grundlage für weitere Layoutanpassungen (z. B. LTR-/RTL-Unterstützung) geschaffen.
+
+## RTL/LTR Anpassung
+Was wird verlangt? In der Aufgabe steht, dass das Menü je nach Schriftkultur rechts oder links angegeben werden soll. 
+Dann wäre das CSS gefragt. Aber dann müsste ich eine Bedingung aufstellen wann sich das Layout ändert. Das bedeutet zwei verlinkte Seiten mit der Wahl zwischen Rtl und IRL.
+Aber eigentlich müsste sich doch die ganze Seite anpassen. Dann müsste lediglich die direction geändert werden. 
+Wir ändern die direction und wenn noch Zeit am Ende bleibt überlegen wir uns nur das Menü anzupassen.
+OK, ufgepasst: 
+
+- Zur Demonstration unterschiedlicher Schriftkulturen wurden zwei HTML-Seiten angelegt.
+- LTR: Für Schreib bzw. Lesrichtung von links nach rechts
+- RTL: Für Lesrichtung bzw Schreibrichtung von rechts nach links
+- Diese beiden Seiten wurden mittels
+  <li class="nav-item"><a class="nav-link" href="index.html">ITR</a></li>
+    <li class="nav-item"><a class="nav-link" href="index-ar.html">RTL</a></li>
+  verlinkt. Damit kann die Lese- bzw. Schreibrichtung jederzeit geändert werden. 
+
+## Aktueller Stand
+- Lokales Menü eingerichtet zu dem gezielt zu den einzelnen Texten navigiert werden kann
+- RTL/IRL Anpassung möglich durch zwei unterschiedliche HTML-Seiten, die miteinander verlinkt wurden
+  (Umgehe ich damit das CSS oder erfüllt es die Aufgabe?) 
+
+
+
 
 
 
