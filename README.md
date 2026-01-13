@@ -83,7 +83,16 @@ OK, ufgepasst:
 ## Aktueller Stand
 - Lokales Menü eingerichtet zu dem gezielt zu den einzelnen Texten navigiert werden kann
 - RTL/IRL Anpassung möglich durch zwei unterschiedliche HTML-Seiten, die miteinander verlinkt wurden
-  (Umgehe ich damit das CSS oder erfüllt es die Aufgabe?) 
+  (Umgehe ich damit das CSS oder erfüllt es die Aufgabe?)
+
+## Texte 
+Zur Auswahl der Texte zur technischen Dokumentatin wurden 
+- eine Betriebsanleitung für eine Espressokanne
+- eine Montageanleitung für ein Ikearegal
+- Wartungsanleitung für eine Fahrradschaltung
+gewählt.
+Zur 
+
 
 
 
