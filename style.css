@@ -1,0 +1,13 @@
+.logo {
+  height: 50px;
+  width: auto;
+}
+* Menü standardmäßig links */
+.sidebar {
+  float: left;
+}
+
+/* Wenn Seite RTL ist: nur Menü nach rechts */
+html[dir="rtl"] .sidebar {
+  float: right;
+}
