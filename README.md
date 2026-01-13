@@ -79,20 +79,91 @@ OK, ufgepasst:
   <li class="nav-item"><a class="nav-link" href="index.html">ITR</a></li>
     <li class="nav-item"><a class="nav-link" href="index-ar.html">RTL</a></li>
   verlinkt. Damit kann die Lese- bzw. Schreibrichtung jederzeit geändert werden. 
+- UPDATE: Zur Sicherheit wurde noch ein CSS mit dem Tausch des lokalen Menüs auf die linke bzw rechte Seite vorgenommen
 
 ## Aktueller Stand
 - Lokales Menü eingerichtet zu dem gezielt zu den einzelnen Texten navigiert werden kann
 - RTL/IRL Anpassung möglich durch zwei unterschiedliche HTML-Seiten, die miteinander verlinkt wurden
   (Umgehe ich damit das CSS oder erfüllt es die Aufgabe?)
 
-## Texte 
+## Texte (13.01.2026)
 Zur Auswahl der Texte zur technischen Dokumentatin wurden 
 - eine Betriebsanleitung für eine Espressokanne
 - eine Montageanleitung für ein Ikearegal
 - Wartungsanleitung für eine Fahrradschaltung
 gewählt.
-Zur 
+Zum Leitfaden wurden folgende Elemente zum ersetzten/ als Ersatz gewählt:
+  // Benutzer / Nutzer
+  ["der Benutzer", "die nutzende Person"],
+  ["Der Benutzer", "Die nutzende Person"],
+  ["der Nutzer", "die nutzende Person"],
+  ["Der Nutzer", "Die nutzende Person"],
+  ["Benutzer", "Nutzende"],
+  ["Nutzer", "Nutzende"],
 
+  // Kunde
+  ["der Kunde", "die kundige Person"],
+  ["Der Kunde", "Die kundige Person"],
+
+  // Fachpersonal
+  ["der Fachmann", "die fachkundige Person"],
+  ["Der Fachmann", "Die fachkundige Person"],
+  ["der Mechaniker", "die fachkundige Person"],
+  ["Der Mechaniker", "Die fachkundige Person"],
+  ["Mitarbeiter", "Mitarbeitende"],
+
+  // Montage
+  ["der Monteur", "die montierende Person"],
+  ["Der Monteur", "Die montierende Person"],
+  ["ein Helfer", "eine unterstützende Person"],
+  ["Ein Helfer", "Eine unterstützende Person"],
+  ["man", "das Unternehmen"]
+
+## Einsetzten gendergerechter Sprache durch JavaScript
+Das Skript besteht aus drei zentralen Bestandteilen:
+- Regelliste
+  Die Regelliste ist als Array von String-Paaren aufgebaut.
+  Jedes Paar definiert eine Ersetzung von einer maskulinen Personenbezeichnung zu einer geschlechtsneutralen Form.
+
+Beispiel:
+
+["der Benutzer", "die nutzende Person"]
+
+
+- Ersetzungsfunktion
+  Eine Funktion durchläuft die Regelliste und ersetzt alle vorkommenden Begriffe im Text.
+  Die Verarbeitung erfolgt ausschließlich auf Textebene (String-Ersetzungen).
+  Hinweis: Casesensivität macht insofern weniger Sinn, da z.b. Artikel am Satzanfang plötzlich kleingeschrieben werden.
+  FÜr die korrekte Rechtschreibung sind sie sehr wohl casesensitov.
+
+- Event-Handler (Button-Klick)
+  Beim Klick auf den Button werden alle Textabsätze mit dem Attribut data-gender-target ausgewählt.
+  Der Text dieser Elemente wird verarbeitet und anschließend aktualisiert.
+
+## Funktionsweise
+- Über einen Button („Texte gendern“) wird eine JavaScript-Funktion ausgelöst.
+- Das Skript durchsucht die Texte nach definierten maskulinen Personenbezeichnungen.
+- Diese Begriffe werden durch geschlechtsneutrale Formulierungen ersetzt.
+- Alle markierten Texte werden dabei gleichzeitig angepasst.
+
+## JavaScript-Skript
+Das JavaScript-Skript ist bewusst einfach gehalten und auf Anfänger-Niveau umgesetzt.
+
+- Die Ersetzungen erfolgen über einfache String-Ersetzungen.
+- Für relevante Begriffe werden sowohl Groß- als auch Kleinschreibung berücksichtigt.
+- Die Texte werden gezielt über ein `data-gender-target`-Attribut ausgewählt.
+
+Die Textmanipulation erfolgt ausschließlich über `textContent`.
+
+## Sicherheit
+Durch die Verwendung von `textContent` wird sichergestellt, dass Inhalte nur als Text behandelt werden.  
+HTML- oder JavaScript-Code innerhalb der Texte kann dadurch nicht ausgeführt werden.
+
+## Aktueller Stand: 
+- Website steht
+- Schönheitsfehler müssen noh korriegiert werden
+- ein Logo muss noch eingefügt werden
+- Verlagsname fehlt noch 
 
 
 
