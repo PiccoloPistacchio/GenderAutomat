@@ -1,9 +1,8 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="ar"   dir="rtl">
-  
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Titel</title>
 
   <link rel="stylesheet" href="style.css">
@@ -13,164 +12,93 @@
 <body>
 
   <header class="bg-dark text-white p-3">
-    <div class="container">
-      <h1>Titel</h1>
+    <div class="container d-flex align-items-center gap-3">
+      <!-- Logo -->
+      <img src="logo.png" alt="KontEXiT Verlag Logo" class="logo">
 
-      <nav>
+      <!-- Titel -->
+      <h1 class="m-0">KontexIT Verlag</h1>
+
+      <!-- Navigation rechts -->
+      <nav class="ms-auto">
         <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">ITR</a></li>
-    <li class="nav-item"><a class="nav-link" href="index-ar.html">RTL</a></li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Start</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Über uns</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Kontakt</a>
-          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">ITR</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index-ar.html">RTL</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Start</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Über uns</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Kontakt</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container mt-4">
-    <p>Willkommen auf der ANDEREN Seite</p>
+    <p>Willkommen auf unserer Webseite des KontexIT Verlags.</p>
+
+    <button class="btn btn-primary my-3" onclick="genderTexte()">Texte gendern</button>
 
     <div class="row g-4 my-3">
-      <aside class="col-12 col-md-4 col-lg-3">
+      <!-- Lokales Menü -->
+      <aside class="col-12 col-md-4 col-lg-4 sidebar">
         <div class="border rounded p-3 position-sticky" style="top: 1rem;">
           <h2 class="h5">Auf dieser Seite</h2>
           <nav aria-label="Lokales Menü">
             <ul class="list-unstyled mb-0">
-              <li><a class="link-primary" href="#text1">Text 1</a></li>
-              <li><a class="link-primary" href="#text2">Text 2</a></li>
-              <li><a class="link-primary" href="#text3">Text 3</a></li>
+              <li><a class="link-primary" href="#text1">Betriebsanleitung Espressokanne</a></li>
+              <li><a class="link-primary" href="#text2">Montageanleitung Ikearegal</a></li>
+              <li><a class="link-primary" href="#text3">Wartungsanleitung Fahrradschaltung</a></li>
             </ul>
           </nav>
         </div>
       </aside>
 
-      <div class="col-12 col-md-8 col-lg-9">
+      <!-- Inhalte -->
+      <div class="col-12 col-md-8 col-lg-8">
         <section id="text1">
-          <h2>Text 1</h2>
-          <p>...</p>
-        </section>
-
-        <section id="text2">
-          <h2>Text 2</h2>
-          <p>...</p>
-        </section>
-
-        <section id="text3">
-          <h2>Text 3</h2>
-          <p>...</p>
-        </section>
-      </div>
-    </div>
-  </main>
-
-  <footer class="bg-light text-center p-3 mt-4">
-    <p>© 2025 – Verlagsname</p>
-    <p>
-      <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
-    </p>
-  </footer>
-
-</body>
-=======
-<!DOCTYPE html>
-<html lang="ar"   dir="rtl">
-  
-<<head>
-  <meta charset="UTF-8">
-  <title>Titel</title>
-
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-
-<body>
-
-  <header class="bg-dark text-white p-3">
-    <div class="container">
-      <h1>Titel</h1>
-
-      <nav>
-        <ul class="nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">ITR</a></li>
-    <li class="nav-item"><a class="nav-link" href="index-ar.html">RTL</a></li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Start</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Über uns</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Kontakt</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container mt-4">
-    <p>Willkommen auf unserer Webseite.</p>
-<button onclick="genderTexte()">Texte gendern</button>
-
-    <div class="row g-4 my-3">
-      <aside class="col-12 col-md-4 col-lg-3 sidebar">
-        <div class="border rounded p-3 position-sticky" style="top: 1rem;">
-          <h2 class="h5">Auf dieser Seite</h2>
-          <nav aria-label="Lokales Menü">
-            <ul class="list-unstyled mb-0">
-              <li><a class="link-primary" href="#Betriebsanleitung Espressokanne">Text 1</a></li>
-              <li><a class="link-primary" href="#Montageanleitung Ikearegal">Text 2</a></li>
-              <li><a class="link-primary" href="#Wartungsanleitung Fahrradschaltung ">Text 3</a></li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
-
-      <div class="col-12 col-md-8 col-lg-9">
-        <section id="Betriebsanleitung Espressokanne">
           <h2>Betriebsanleitung Espressokanne</h2>
-          <p data-gender-target>Der Benutzer füllt Wasser in den unteren Behälter der Espressokanne und setzt den Filter ein.
+          <p data-gender-target>
+            Der Benutzer füllt Wasser in den unteren Behälter der Espressokanne und setzt den Filter ein.
             Anschließend gibt der Benutzer das Kaffeepulver in den Filter und schraubt die Kanne zusammen.
             Der Nutzer stellt die Espressokanne auf die Herdplatte und wartet, bis der Kaffee durchgelaufen ist.
             Nach dem Gebrauch reinigt der Benutzer die Kanne gründlich.
-            Bei Problemen kann sich der Kunde an einen Fachmann wenden.</p>
+            Bei Problemen kann sich der Kunde an einen Fachmann wenden.
+          </p>
         </section>
 
-        <section id="Montageanleitung Ikearegal">
+        <section id="text2" class="mt-4">
           <h2>Montageanleitung Ikearegal</h2>
-          <p data-gender-target>Der Benutzer überprüft zunächst alle Bauteile und legt das benötigte Werkzeug bereit.
-             Danach montiert der Monteur die Seitenteile und befestigt die Regalböden gemäß der Anleitung.
-             Falls der Benutzer unsicher ist, kann ein Helfer unterstützen.
-             Der Nutzer sollte das Regal am Ende auf Stabilität prüfen.
-             Bei Fragen kann sich der Kunde an den Kundenservice wende</p>
+          <p data-gender-target>
+            Der Benutzer überprüft zunächst alle Bauteile und legt das benötigte Werkzeug bereit.
+            Danach montiert der Monteur die Seitenteile und befestigt die Regalböden gemäß der Anleitung.
+            Falls der Benutzer unsicher ist, kann ein Helfer unterstützen.
+            Der Nutzer sollte das Regal am Ende auf Stabilität prüfen.
+            Bei Fragen kann sich der Kunde an den Kundenservice wenden.
+          </p>
         </section>
 
-        <section id="Wartungsanleitung Fahrradschaltung ">
+        <section id="text3" class="mt-4">
           <h2>Wartungsanleitung Fahrradschaltung</h2>
-          <p data-gender-target>Der Benutzer kontrolliert regelmäßig den Zustand der Fahrradschaltung.
-             Zunächst reinigt der Nutzer die Kette und überprüft die Schrauben.
-             Anschließend stellt der Mechaniker die Schaltung präzise ein.
-             Für unsachgemäße Nutzung haftet man nicht. 
-             Wenn der Benutzer ungewöhnliche Geräusche bemerkt, sollte er die Nutzung unterbrechen.
-             In diesem Fall empfiehlt es sich, einen Fachmann oder Mitarbeiter aufzusuchen.</p>
+          <p data-gender-target>
+            Der Benutzer kontrolliert regelmäßig den Zustand der Fahrradschaltung.
+            Zunächst reinigt der Nutzer die Kette und überprüft die Schrauben.
+            Anschließend stellt der Mechaniker die Schaltung präzise ein.
+            Für unsachgemäße Nutzung haftet man nicht.
+            Wenn der Benutzer ungewöhnliche Geräusche bemerkt, sollte er die Nutzung unterbrechen.
+            In diesem Fall empfiehlt es sich, einen Fachmann oder Mitarbeiter aufzusuchen.
+          </p>
         </section>
       </div>
     </div>
   </main>
 
   <footer class="bg-light text-center p-3 mt-4">
-    <p>© 2025 – Verlagsname</p>
-    <p>
+    <p class="mb-1">© 2025 – KontexIT Verlag</p>
+    <p class="mb-0">
       <a href="#">Impressum</a> | <a href="#">Datenschutz</a>
     </p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
->>>>>>> Stashed changes
+
 </html>
